@@ -103,7 +103,6 @@ class Library:
         author = self._parse_input(input("Введите автора: "), r"(?<!\S)[\w]+")
         year = self._parse_input(input("Введите год релиза: "), r"(?<!\S)[\d]+(?!\S)")
         result_map_msg = {
-            0: "Добавлен дубликат.",
             1: f"Книга {title} ранее регистрировалась, Изменен статус.",
             2: f"Книга {title} добавлена в архив.",
         }

@@ -50,11 +50,11 @@ class Archive:
         """
         Если книги нет, она добавляется.
         Если книга есть в архиве, но статус 'выдана', то изменится статус.
-        Если книга есть в архиве, добавляется дубликат в актуальным иднексом(если уже есть дубликаты).
+        Если книга есть в архиве, добавляется дубликат с актуальным индексом.
         """
         income_data_id = tuple(data.keys())[0]
         storage_data = self.cache
-        answer = 0
+        answer = 2
         if income_data_id in storage_data and storage_data[income_data_id]["status"] == "выдана":
             storage_data[income_data_id]["status"] = "в наличии"
             answer = 1
@@ -62,7 +62,6 @@ class Archive:
             dublicate = self._find_dublicate(income_data_id)
             id = self._gen_actual_id(income_data_id, dublicate)
             data = {id: data[income_data_id]}
-            answer = 2
         storage_data.update(data)
         self.clean_cache()
         self.refresh(storage_data)

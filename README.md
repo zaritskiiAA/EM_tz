@@ -1,6 +1,6 @@
 ### console library app
 Консольное приложение имитирующее работу книжной библиотеки. Роль библиотечного архива выполняет json файл.
-Подробная документация в ![doc](./#doc.md)
+Подробная документация в ![doc](https://github.com/zaritskiiAA/EM_tz/blob/main/doc.md)
 
 #### *Содержание*
 1. [Пользовательский интерфейс](#user-interface)
@@ -10,7 +10,7 @@
 <br>
 
 ### 1. Пользовательский интерфейс <a id="user-interface"></a>
-![меню](./console_app/image/menu.png)
+![меню](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/menu.PNG)
 
 ### 2. Описание основных сущностей и их интерфейсов<a id="object-interface"></a>
 В приложение присутствуюет 2 сущности:
@@ -41,31 +41,31 @@
 
 **add** - Добавление книги. Пользователь вводит "title", "author" и "year", после чего книга добавляется в библиотеку.
 
-![add_cmd](./console_app/image/add_cmd.png)
+![add_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/add_cmd.PNG)
 
 **delete** - Удаление книги. Пользователь вводит id книги, которую нужно удалить.
 
-![delete_cmd](./console_app/image/delete_cmd.png)
+![delete_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/delete_cmd.PNG)
 
 **search** - Поиск книги. Пользователь может искать книги по title, author или year
 
-![search_cmd](./console_app/image/search_cmd.png)
+![search_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/search_cmd.PNG)
 
 **all** - Отображение всех книг. Приложение выводит список всех книг с их id, title, author, year и status.
 
-![all_cmd](./console_app/image/all_cmd.png)
+![all_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/all_cmd.PNG)
 
 **change status** - Изменение статуса книги. Пользователь вводит id книги и новый статус (“в наличии” или “выдана”).
 
-![change_status_cmd](./console_app/image/change_status_cmd.png)
+![change_status_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/change_status_cmd.PNG)
 
 **cmd** - запросить меню с командами и описанием
 
-![меню](./console_app/image/menu.png)
+![меню](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/menu.PNG)
 
 **leave** - Выйти из библиотеки (прервать выполнение скрипта.)
 
-![leave_cmd](./console_app/image/leave_cmd.png)
+![leave_cmd](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/leave_cmd.PNG)
 
 ### Запуск и тестирование<a id="dev"></a> 
 #### Запуск

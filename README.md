@@ -1,6 +1,6 @@
 ### console library app
 Консольное приложение имитирующее работу книжной библиотеки. Роль библиотечного архива выполняет json файл.
-Подробная документация в ![doc](https://github.com/zaritskiiAA/EM_tz/blob/main/doc.md)
+Подробная документация в [doc](https://github.com/zaritskiiAA/EM_tz/blob/main/doc.md)
 
 #### *Содержание*
 1. [Пользовательский интерфейс](#user-interface)

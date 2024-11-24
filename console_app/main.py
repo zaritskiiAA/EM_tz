@@ -99,8 +99,8 @@ class Library:
                 )
 
     def add(self):
-        title = self._parse_input(input("Введите название: "), r"(?<!\S)[\w]+")
-        author = self._parse_input(input("Введите автора: "), r"(?<!\S)[\w]+")
+        title = self._parse_input(input("Введите название: "), r"(?<!\S)[\w\.]+")
+        author = self._parse_input(input("Введите автора: "), r"(?<!\S)[\w\.]+")
         year = self._parse_input(input("Введите год релиза: "), r"(?<!\S)[\d]+(?!\S)")
         result_map_msg = {
             1: f"Книга {title} ранее регистрировалась, Изменен статус.",
@@ -117,7 +117,6 @@ class Library:
         # заменить дублирование групп на именовaные
         id = self._parse_input(id, r"(?<!\S)(t[0-9]+a[0-9]+y[0-9]+(d[0-9]+)?)(?!\S)")
         self.validate_input_data([id])
-        print(id)
         self.archive.delete(id)
         print("Книга успешно удалена из архива.")
 
@@ -150,12 +149,12 @@ class Library:
 
     def all(self) -> None:
         storage_data = [
-            (id, book["title"], book["author"], book["year"])
+            (id, book["title"], book["author"], book["year"], book["status"])
             for id, book in self.archive.all().items()
             if "d" not in id
         ]
         print("АРХИВ:\n")
-        print(self.formatted_style(("ID", "TITLE", "AUTHOR", "YEAR"), storage_data))
+        print(self.formatted_style(("ID", "TITLE", "AUTHOR", "YEAR", "STATUS"), storage_data))
 
     @staticmethod
     def _match(storage_data: dict[str, dict[str]], filter_attr: str) -> list[tuple[str]]:

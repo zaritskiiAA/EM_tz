@@ -67,7 +67,7 @@ def change_status(self, id: str, new_status: str) -> int:
 
 Так как мы имеем фиксированные получаемые данные от пользователя "title", "author", "year" и мы контрoлируем порядок ввода, мы можем атрибуты книги кодировать под видом id.
 
-![id](./console_app/image/gen_id.png)
+![id](https://github.com/zaritskiiAA/EM_tz/blob/main/console_app/image/gen_id.PNG)
 
 Что нам это даёт?
 1. Используем преимущества python словарей где поиск по ключам  константный, что даёт нам преимущество при любом поиске в архиве.
